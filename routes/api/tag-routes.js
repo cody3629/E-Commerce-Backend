@@ -56,7 +56,7 @@ router.post('/', (req, res) => {
     tag_name: req.body.tag_name
   })
   .then(dbTagData => res.json(dbTagData))
-  .cacth(err => {
+  .catch(err => {
     console.log(err);
     res.status(500).json(err);
   });
